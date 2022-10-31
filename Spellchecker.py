@@ -11,7 +11,7 @@ def P(word): return word_count[word] / N # float
 
 #Run the function:
 
-print( list(map(lambda x: (x, P(x)), words('speling spelling speeling'))) )
+# print( list(map(lambda x: (x, P(x)), words('speling spelling speeling'))) )
 
 letters    = 'abcdefghijklmnopqrstuvwxyz'
 
@@ -58,7 +58,7 @@ def edits3(word):
                 all += inserts
     return set(all)
  
-print('speling -->', correction('speling'))
+# print('speling -->', correction('speling'))
 # speling spelling
  
 def unit_tests():
@@ -105,7 +105,7 @@ def Testset(lines):
             for (right, wrongs) in (line.split(':') for line in lines)
             for wrong in wrongs.split()]
 
-print(unit_tests())
-spelltest(Testset(open('spell-testset1.txt'))) # Development set
+# print(unit_tests())
+# spelltest(Testset(open('spell-testset1.txt'))) # Development set
 # spelltest(Testset(open('spell-testset2.txt'))) # Final test set
     
